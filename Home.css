@@ -1,0 +1,135 @@
+body{
+    background: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+}
+
+table tr td {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+td button {
+    margin: 0.5em;
+}
+
+td button i {
+    font-size: 1.25rem;
+}
+
+.modal-header {
+    background: #597bad;
+    color: #fff;
+}
+
+.modal-body form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.modal-body form .imgholder {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.imgholder .upload {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.imgholder:hover .upload {
+    display: flex;
+}
+
+.imgholder .upload input {
+    display: none;
+}
+
+.modal-body form .inputField {
+    flex-basis: 100%;
+    max-width: 600px;
+    height: auto;
+    border-left: 4px groove #597bad;
+    padding-left: 1em;
+}
+
+form .inputField > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+form .inputField > div label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #597bad;
+}
+
+form .inputField > div select,
+form .inputField > div input {
+    width: 75%;
+    padding: 0.7em;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #597bad;
+    font-size: 1rem;
+    color: #222;
+}
+
+.modal-footer .submit {
+    font-size: 1rem;
+    background: #597bad;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    border: none;
+}
+
+#readData form .inputField > div input {
+    color: #222;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .modal-body form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .modal-body form .imgholder,
+    .modal-body form .inputField {
+        max-width: 100%;
+        height: auto;
+        padding-left: 0;
+        border-left: none;
+        margin-bottom: 1em;
+    }
+    form .inputField > div label,
+    form .inputField > div select,
+    form .inputField > div input {
+        font-size: 1rem;
+    }
+}
